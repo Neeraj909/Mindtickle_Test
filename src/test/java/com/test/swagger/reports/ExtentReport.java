@@ -2,7 +2,7 @@ package com.test.swagger.reports;
 
 
 import com.relevantcodes.extentreports.ExtentReports;
-import utils.Constants;
+import com.test.swagger.utils.Constants;
 
 import java.io.File;
 

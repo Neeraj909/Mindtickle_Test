@@ -2,10 +2,8 @@ package com.test.swagger.restapi;
 
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-
+import static com.test.swagger.specbuilder.SpecBuilder.*;
 import static io.restassured.RestAssured.given;
-import static specbuilder.SpecBuilder.getResponseSpecBuilder;
-import static specbuilder.SpecBuilder.getUserRequestSpecification;
 
 public class RestApi {
     public static Response post(String path, String token, Object request){
