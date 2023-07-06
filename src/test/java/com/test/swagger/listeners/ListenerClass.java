@@ -1,10 +1,10 @@
-package listeners;
+package com.test.swagger.listeners;
+import com.test.swagger.reports.ExtentManager;
+import com.test.swagger.reports.ExtentReport;
+import com.test.swagger.reports.LogStatus;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import reports.ExtentManager;
-import reports.ExtentReport;
-import reports.LogStatus;
 
 public class ListenerClass implements ITestListener{
 	

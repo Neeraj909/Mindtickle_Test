@@ -1,9 +1,8 @@
-package reports;
+package com.test.swagger.reports;
 
 
 import com.relevantcodes.extentreports.ExtentReports;
 import utils.Constants;
-
 
 import java.io.File;
 

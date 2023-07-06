@@ -1,4 +1,4 @@
-package utils;
+package com.test.swagger.utils;
 
 public class Constants {
 	

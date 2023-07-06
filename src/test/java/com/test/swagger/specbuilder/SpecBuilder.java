@@ -1,4 +1,4 @@
-package specbuilder;
+package com.test.swagger.specbuilder;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;

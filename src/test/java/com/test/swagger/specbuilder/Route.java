@@ -1,4 +1,4 @@
-package specbuilder;
+package com.test.swagger.specbuilder;
 
 public class Route {
     public static final String BASE_USERS="/users/";

@@ -1,5 +1,4 @@
-package reports;
-
+package com.test.swagger.reports;
 
 
 public class LogStatus {
