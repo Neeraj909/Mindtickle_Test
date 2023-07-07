@@ -21,6 +21,7 @@ public class ExtentReport {
 
 	public static void initialize()
 	{
+
 		new ExtentReport();
 	}
 

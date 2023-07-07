@@ -6,7 +6,7 @@
     </listeners>
     <test thread-count="2" parallel="tests" name="Test">
         <classes>
-<!--            <class name="com.test.swagger.apitestcases.UserAPITestCase"/>-->
+            <class name="com.test.swagger.apitestcases.UserAPITestCase"/>
             <class name="com.test.swagger.apitestcases.PetAPITestCase"></class>
         </classes>
     </test> <!-- Test -->
