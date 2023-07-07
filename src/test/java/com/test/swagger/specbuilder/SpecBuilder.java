@@ -7,6 +7,10 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
 
 public class SpecBuilder {
     public static RequestSpecification getUserRequestSpecification(){
@@ -25,7 +29,7 @@ public class SpecBuilder {
         return new RequestSpecBuilder().
                 setBaseUri(Route.BASE_URI).
                 setBasePath(Route.BASE_PET).
-                setContentType(ContentType.URLENC).
+                setContentType(ContentType.JSON).
                 log(LogDetail.ALL).build();
     }
 

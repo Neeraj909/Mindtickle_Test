@@ -1,6 +1,5 @@
 package com.test.swagger.reports;
 
-
 import com.relevantcodes.extentreports.ExtentTest;
 
 public class ExtentManager {

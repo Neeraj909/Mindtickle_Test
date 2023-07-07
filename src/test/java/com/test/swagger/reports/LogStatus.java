@@ -1,6 +1,7 @@
 package com.test.swagger.reports;
 
 
+
 public class LogStatus {
 
 	private LogStatus() {
@@ -8,7 +9,7 @@ public class LogStatus {
 	}
 	public static void pass(String message)
 	{
-		ExtentManager.getExtTest().log(com.relevantcodes.extentreports.LogStatus.FAIL, message);
+		ExtentManager.getExtTest().log(com.relevantcodes.extentreports.LogStatus.PASS, message);
 		
 	}
 
