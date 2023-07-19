@@ -2,7 +2,9 @@ package com.test.swagger.apitestcases;
 import com.test.swagger.reports.ExtentReport;
 import com.test.swagger.reports.LogStatus;
 import com.test.swagger.utils.Constants;
+import io.restassured.response.Response;
 import org.apache.commons.io.output.WriterOutputStream;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -14,6 +16,8 @@ import java.io.PrintStream;
 import java.io.StringWriter;
 
 public class BaseTest {
+
+    public static Response response;
 
     protected static StringWriter writer;
     protected static PrintStream captor;
@@ -33,6 +37,12 @@ public class BaseTest {
         LogStatus.info("---- Response ---");
         formatAPIAndLogInReport(response);
     }
+    @AfterMethod
+    public static long responseTime(){
+       System.out.println("Response Time "+response.time());
+       return response.time();
+    }
+
     protected static void formatAPIAndLogInReport(String content) {
 
         String prettyPrint = content.replace("\n", "<br>");
