@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 public class UserAPITestCase extends BaseTest {
-    Response response;
     public static List<UserPojo> listOfUser;
     String username = "";
     @Test(priority = 0,description="Test-1::Create multiple Users")

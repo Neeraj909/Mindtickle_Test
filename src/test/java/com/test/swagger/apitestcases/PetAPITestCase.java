@@ -17,7 +17,6 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 public class PetAPITestCase extends BaseTest {
-    Response response;
     PetDataCreator pet = new PetDataCreator();
     PetPojo petPojo;
     String status="";
