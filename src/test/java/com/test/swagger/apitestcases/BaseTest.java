@@ -14,6 +14,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.io.StringWriter;
+import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
@@ -38,9 +39,9 @@ public class BaseTest {
         formatAPIAndLogInReport(response);
     }
     @AfterMethod
-    public static long responseTime(){
+    public long responseTime(){
        System.out.println("Response Time "+response.time());
-       return response.time();
+       return response.timeIn(TimeUnit.SECONDS);
     }
 
     protected static void formatAPIAndLogInReport(String content) {

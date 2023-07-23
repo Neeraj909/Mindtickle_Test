@@ -1,4 +1,5 @@
 package com.test.swagger.listeners;
+import com.test.swagger.apitestcases.BaseTest;
 import com.test.swagger.reports.ExtentManager;
 import com.test.swagger.reports.ExtentReport;
 import com.test.swagger.reports.LogStatus;
@@ -6,7 +7,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class ListenerClass implements ITestListener {
+public class ListenerClass extends BaseTest implements ITestListener {
 
 	private static String TestcaseName;
 
@@ -30,7 +31,7 @@ public class ListenerClass implements ITestListener {
 
 	public void onTestSuccess(ITestResult result) {
 
-		LogStatus.pass(result.getMethod().getDescription()+ " test case is passed");
+		LogStatus.pass(result.getMethod().getDescription()+ " test case is passed"+"   Response Time-->"+responseTime());
 		ExtentReport.report.endTest(ExtentManager.getExtTest());
 	}
 
