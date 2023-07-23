@@ -23,7 +23,7 @@ public class ListenerClass extends BaseTest implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
 		TestcaseName =result.getMethod().getDescription();
-		setTestcaseName(TestcaseName);
+		setTestcaseName(getTestcaseName());
 		ExtentManager.setExtentTest(ExtentReport.report.startTest(TestcaseName));
 		LogStatus.pass(TestcaseName+ " is started successfully");
 
